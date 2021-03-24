@@ -31,6 +31,8 @@ client.on("message", async (message) => {
       (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
     )
 
+  if (!command) return
+
   if (command.dev) {
     if (
       !config.client.owners.some((author) => author.includes(message.author.id))
