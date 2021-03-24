@@ -5,7 +5,6 @@ module.exports = {
   category: "bot",
   execute(client, message, args, embed) {
     if (!args[0]) {
-      let reply = ""
       client.category.forEach((c) => {
         let matched = client.commands.filter(
           (command) => command.category === c
