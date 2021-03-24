@@ -4,6 +4,6 @@ module.exports = (message) => {
   const embed = new Discord.MessageEmbed()
   embed.setFooter(`${message.author.tag}`, message.author.avatarURL())
   embed.setTimestamp(new Date())
-  embed.setColor("#FFB0CF")
+  embed.setColor("#f4ff61")
   return embed
 }
