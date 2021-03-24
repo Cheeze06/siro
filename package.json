@@ -1,0 +1,23 @@
+{
+  "name": "siro",
+  "version": "1.0.0",
+  "description": "그냥 평범한 디스코드 봇이에요   \r 자세한 내용은 웹에서 확인해주세요!   \r [웹 ](https://siro.netlify.app)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minully0120/siro.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Minully0120/siro/issues"
+  },
+  "homepage": "https://github.com/Minully0120/siro#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security"
+  }
+}
