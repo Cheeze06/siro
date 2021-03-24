@@ -2,6 +2,7 @@ module.exports = {
   name: "실행",
   description: "작성한 코드를 실행합니다.",
   aliases: ["이발", "에발", "실행", "eval"],
+  category: "develop",
   dev: true,
   execute(client, message, args, embed) {
     let text = args.slice(0).join(" ")
