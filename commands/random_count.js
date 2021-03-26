@@ -4,7 +4,7 @@ module.exports = {
   aliases: ['숫자뽑기', 'random_count'],
   category: 'bot',
   execute(client, message, args, embed) {
-    let count = Math.floor(Math.random() * args[0] + 1);
+    let count = Math.floor(Math.random() * args[0] + 1)
     if (!count) return message.reply('숫자를 입력해주세요!')
 
     message.reply(`${args}에서 ${count}를 뽑았습니다!`)
