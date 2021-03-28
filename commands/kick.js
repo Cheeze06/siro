@@ -2,7 +2,7 @@ module.exports = {
 	name: "킥",
 	description: "멘션한 유저를 서버에서 킥합니다",
 	aliases: ["킥", "kick"],
-	category: "bot",
+	category: "moderation",
 	execute(client, message, args) {
 		const user = message.mentions.members.first()
 
