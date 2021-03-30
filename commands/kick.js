@@ -6,14 +6,12 @@ module.exports = {
 	execute(client, message, args) {
 		const user = message.mentions.members.first()
 
-		// 예외처리
-		if (!user) return message.react("서버에서 킥하실 유저를 멘션해주세요")
+		if (!user) return message.reply("서버에서 킥하실 유저를 멘션해주세요")
 		if (!message.member.hasPermission("KICK_MEMBERS"))
-			return message.react("권한이 부족합니다")
-		if (!message.guild.me.hasPermission('BAN_MEMBERS'))
-		    	return message.react("봇의 권한이 부족합니다.")
+			return message.reply("권한이 부족합니다")
+		if (!message.guild.me.hasPermission("BAN_MEMBERS"))
+			return message.reply("봇의 권한이 부족합니다.")
 
-		// 벤
 		user
 			.ban()
 			.then(() => {
