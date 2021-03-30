@@ -1,5 +1,5 @@
 module.exports = {
-	name: "avatar",
+	name: "프로필",
 	description: "멘션한 유저의 프로필을 보여줍니다",
 	aliases: ["avatar", "프로필", "profile"],
 	category: "bot",
