@@ -9,6 +9,8 @@ module.exports = {
 		if (!user) return message.react("서버에서 벤하실 유저를 멘션해주세요")
 		if (!message.member.hasPermission("BAN_MEMBERS"))
 			return message.react("권한이 부족합니다")
+		if (!message.guild.me.hasPermission('BAN_MEMBERS'))
+		    	return message.react("봇의 권한이 부족합니다.")
 
 		user
 			.ban()
