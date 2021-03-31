@@ -14,9 +14,8 @@ module.exports = {
 		if (isNaN(args[0]))
 			return message.reply("1 ~ 100까지의 `숫자`만 입력해주세요!")
 
-		if (args[0] > 100)
+		if (args[0] > 100 || args[0] < 1)
 			return message.reply("1 ~ 100 까지의 숫자만 입력가능해요!")
-		if (args[0] < 1) return message.reply("1 ~ 100 까지의 숫자만 입력가능해요!")
 
 		await message.channel.messages
 			.fetch({ limit: args[0] })
